@@ -1,0 +1,35 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+
+  &.btn-primary,
+  &.btn-secondary {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  &.btn-primary {
+    color: var(--grey-950);
+    background-color: var(--primary-600);
+
+    &:hover {
+      background: var(--primary-700);
+      color: var(--white-300);
+    }
+  }
+
+  &.btn-secondary {
+    color: var(--grey-950);
+    background-color: var(--secondary-600);
+
+    &:hover {
+      background: var(--secondary-700);
+      color: var(--white-300);
+    }
+  }
+}
